@@ -93,7 +93,7 @@ Du bist mit diesem System auf Expert-Level. Niemand erreicht zuverlässig >70%.
 ```
 nba_predictor/
 ├── predictor.py        # Hauptinterface (hier starten)
-├── data_collector.py   # NBA API Wrapper
+├── datacollector.py   # NBA API Wrapper
 ├── features.py         # Feature Engineering
 ├── model.py            # XGBoost Ensemble
 ├── README.md

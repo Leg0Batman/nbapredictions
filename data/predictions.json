@@ -1,0 +1,12 @@
+{
+  "predictions": [
+    {
+      "matchup": "Minnesota Timberwolves @ San Antonio Spurs",
+      "winner": "Minnesota Timberwolves",
+      "confidence": "\ud83e\udd37 NIEDRIG (Toss-Up)",
+      "home_prob": 47.7,
+      "away_prob": 52.3,
+      "confidence_pct": 52.3
+    }
+  ]
+}

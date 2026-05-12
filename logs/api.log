@@ -1,0 +1,20 @@
+
+============================================================
+  NBA PREDICTIONS API — DEVELOPMENT
+============================================================
+🚀 Running on http://127.0.0.1:8000
+
+📱 iPhone app endpoints:
+   GET /health — Health check
+   GET /api/predictions — Raw predictions
+   GET /api/predictions/formatted — iPhone-friendly format
+   GET /api/stats — Model statistics
+
+============================================================
+
+ * Serving Flask app 'api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [12/May/2026 11:16:54] "GET /health HTTP/1.1" 200 -

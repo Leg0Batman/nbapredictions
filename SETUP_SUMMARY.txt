@@ -1,0 +1,69 @@
+================================================================================
+  NBA PREDICTIONS SYSTEM — COMPLETE SETUP
+================================================================================
+
+✅ BACKEND (Already Configured)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  
+  Daily predictions generated automatically at 10:00 AM (via cron job)
+  
+  To run daily predictions manually:
+    python3 daily_predict.py
+  
+  To train the model:
+    python3 predictor.py train
+    
+  To make custom predictions:
+    python3 predict_matchup.py
+
+✅ API SERVER (For iPhone App)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  
+  Start API server:
+    bash start_api.sh
+  
+  Then access from iPhone:
+    http://YOUR_IP:8000/api/predictions/formatted
+    
+  Get your IP:
+    ipconfig getifaddr en0
+
+📱 IPHONE APP (NEW)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  
+  Example code: ios_app_example.swift
+  Setup guide: IPHONE_SETUP.md
+  
+  Steps:
+    1. Start API server (bash start_api.sh)
+    2. Get your IP (ipconfig getifaddr en0)
+    3. Open Xcode → New SwiftUI Project
+    4. Copy ios_app_example.swift code into ContentView.swift
+    5. Update IP address in the code
+    6. Run on iPhone/Simulator
+
+📁 KEY FILES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  
+  api.py                  → REST API server
+  daily_predict.py        → Daily prediction runner
+  predictor.py            → Main prediction interface
+  ios_app_example.swift   → iPhone app code
+  start_api.sh            → Start API server
+  setup_cron.sh           → Install daily cron job
+  IPHONE_SETUP.md         → iPhone setup guide
+  
+  data/predictions.json   → Today's predictions
+  models/nba_model.pkl    → Trained model
+  logs/                   → API and daily logs
+
+🔗 WORKFLOW
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  
+  Every Day (10:00 AM):
+    1. Cron job runs daily_predict.py
+    2. Predictions generated → data/predictions.json
+    3. iPhone app fetches latest predictions via API
+    4. Display beautiful interface to user
+
+================================================================================
