@@ -1,7 +1,7 @@
 # 🏀 NBA Game Predictor
 
 Autonomes ML-System das NBA-Spielsieger vorhersagt — Regular Season & Playoffs.
-
+Bisschen gespielt muss noch angefeilt werden an der einen oder anderen Ecke, aber reicht vorerst.
 ## Architektur
 
 ```
